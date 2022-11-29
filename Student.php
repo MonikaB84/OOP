@@ -2,7 +2,7 @@
 
 class Student{
 
-public $name;
+private $name;
 public $surname;
 public $age;
 public $gender;
@@ -24,6 +24,21 @@ function __construct($name = null, $surname = null, $age = null, $gender = null)
     $this->surname = $surname;
     $this->age = $age;
     $this->gender = $gender;
+}
+
+public function getName()
+{
+    return $this->name;
+}
+
+public function setName($name)
+{
+    $this->name = $name;
+}
+
+public function introduction()
+{
+    echo "Sveiki aš esu ".$this->name . " ".$this->surname. ".";
 }
 }
 
