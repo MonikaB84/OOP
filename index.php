@@ -11,6 +11,8 @@
     <?php 
     include "./Student.php"; 
     include "./Math.php"; 
+
+    
         $studentas = new Student("Jonas", "Vaisgantas", 20, "vyras");
         print_r($studentas);
         $studentas1 = new Student("Algis", "Greitas", 21, "vyras");
